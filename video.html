@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link href="css/video-js.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+		<script src="js/video.js"></script>
+		<script>
+			videojs.options.flash.swf = "js/video-js.swf";
+		</script>
+
+	</head>
+
+	<body class="bgwrite">
+
+		<!--head-->
+		<div class="navbar navbar-inverse myvideohead" style="border-radius: 0px;margin-bottom: 0px;">
+			<div class="myvideotitle">
+				<div class="backoff">
+					<a href="#">
+						<</a>
+				</div>
+				<div class="classname">1课程名称 <span class="classname2"> 1.1第一章 乐福托尔斯泰</span></div>
+			</div>
+			<div class="fl-left">
+				<div class="backoff ">
+					<a href="1" class="  glyphicon glyphicon-envelope ">
+						<span class="badge" style="position: absolute; left: 45px;top: 10px; background-color: red;">42</span>
+					</a>
+
+				</div>
+				<div class="backoff">
+					<a href="#"><img src="img/touxiang.png" width="40px" height="40px" class=" img-circle" /></a>
+				</div>
+
+			</div>
+		</div>
+		<!--
+        	作者：zhaoqingchun163@163.com
+        	时间：2016-08-07
+        	描述：视频
+        -->
+		<div class="play-body">
+			<!---->
+			<div class="myvideojs ">
+				<video id="my-video" class="video-js vjs-big-play-centered myvideowidth " controls preload="auto" data-setup="">
+					<source src="video/1.mp4" type='video/mp4' />
+				</video>
+				<div class="pull glyphicon glyphicon-list" onclick="pull();"><br><span style="font-size: 12px;padding-top: 10px;display: block;">章节</span></div>
+			</div>
+			<div class="videomenu" id="menu">
+
+				<div class="mymenu-body" id="entitymenu" >
+					<ul class="list-unstyled ">
+						<li class="mymenu-title">1课程名称</li>
+						<li class="mymeny-chapter">1.1第一章 乐福托尔斯泰</li>
+						<li class="mymeny-section "><a href="#" style="color: #92ac00;"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						
+						<li class="mymeny-chapter">1.1第一章 乐福托尔斯泰</li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						
+						<li class="mymeny-chapter">1.1第一章 乐福托尔斯泰</li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						
+						<li class="mymeny-chapter">1.1第一章 乐福托尔斯泰</li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						<li class="mymeny-chapter">1.1第一章 乐福托尔斯泰</li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						
+						<li class="mymeny-chapter">1.1第一章 乐福托尔斯泰</li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						<li class="mymeny-chapter">1.1第一章 乐福托尔斯泰</li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						
+						<li class="mymeny-chapter">1.1第一章 乐福托尔斯泰</li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						<li class="mymeny-chapter">1.1第一章 乐福托尔斯泰</li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						
+						<li class="mymeny-chapter">1.1第一章 乐福托尔斯泰</li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+						<li class="mymeny-section"><a href="#"><span class="glyphicon glyphicon-play mymenuico"></span>1.1.1第一节 托尔斯泰 <span class="menutime">59分钟</span></a></li>
+					</ul>
+				</div>
+			</div>
+			</video>
+
+		</div>
+
+		<div style="height: 1200px; width: 1000px;"></div>
+		<!--play-body end-->
+		<script>
+			videojs("my-video").ready(function() {
+				var play = this;
+				var playwidth = $(".play-body").width();
+				//s	play.width(980);
+				//	play.height(450);
+			});
+
+			function pull() {
+				
+				var menu = $("#menu").css('width');
+		
+				var myvideojs = $(".myvideojs").css('width');
+				var playbody = document.body.clientWidth ;
+				if($("#menu").css('width') == '0px') {
+					//$(".myvideojs ").css('width',b);
+
+					$("#menu").animate({
+						width: 360
+					}, "slow");
+
+					$(".myvideojs ").animate({
+						width: playbody- 360
+					}, "slow");
+					//	$("#entitymenu").css("display", "block");
+					
+				} else {
+
+					$(".myvideojs ").animate({
+						width: playbody
+					}, "slow");
+					$("#menu").animate({
+						width: 0
+					}, "slow");
+					//	$("#entitymenu").css("display", "none");
+
+				}
+			}
+			
+
+			
+		</script>
+		<div class="container bgwrite">
+			<ul class="nav nav-tabs">
+				<li role="presentation" class="active">
+					<a href="#">Home</a>
+				</li>
+				<li role="presentation">
+					<a href="#">Profile</a>
+				</li>
+				<li role="presentation">
+					<a href="#">Messages</a>
+				</li>
+			</ul>
+			<div class="row">
+				<div class="col-lg-8">12e</div>
+				<div class="col-lg-4">asdf</div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

@@ -264,15 +264,8 @@ body {
 	background-repeat: no-repeat;
 	background-position: left center;
 }
-.play-body{
-	width: 100%;
-	background-color: #000000;
-	height: auto;
-}
-.myvideowidth{
-	width: 70%;
-	height: 450px;
-}
+
+
 .myvideohead{
 
 	background-color: #14191E;
@@ -317,4 +310,88 @@ body {
 .myvideotitle{
 	width: 82%;
 	float: left;
+}
+.myvideojs{
+width: 100%;
+float: left;
+
+}
+.myvideowidth{
+	height: 450px;
+width: 100%;
+}
+.play-body{
+	width: 100%;
+	background-color: #000000;
+	height: 450px;
+}
+.videomenu{
+	
+	width: 0;
+	height: 450px;
+	float: right;
+	background-color: #14191E;
+}
+.pull{
+	float: right;
+	width: 50px;
+	height: 60px;
+	position: relative;
+	top: 50%;
+   
+    margin-top: -302px;
+	background-color: #363C40;
+	text-align: center;
+	padding-top: 10px;
+	color: #B5B9BC;
+	cursor: pointer;
+}
+.pull:hover{
+	background-color: red;
+	color: #FFFFFF;
+}
+.mymenu-title{
+	
+	padding-bottom: 20px;
+	font-size: 16px;
+	color: #ccc;
+}
+.mymenu-body{
+	margin: 0px 0 20px 20px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 450px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.mymenu-body li{
+display: block;
+width: 320px;
+overflow-y: hidden;
+}
+.mymenu-body a{
+text-decoration: none;
+color: #666;
+}
+.mymenu-body a:hover{
+
+color: #92ac00;
+}
+.mymeny-chapter{
+	color: #999;
+		padding-bottom: 15px;
+		padding-top: 5px;
+}
+.mymeny-section{
+	padding-left: 20px;
+	color: #999;
+	font-size: 13px;
+		padding-bottom: 15px;
+}
+.menutime{
+	padding-right: 10px;
+	float: right;
+}
+.mymenuico{
+	padding-right: 10px;
 }
