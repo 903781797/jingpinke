@@ -10,6 +10,7 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 		<script src="js/video.js"></script>
+		<script src="css/userMenu.js"></script>
 		<script>
 			videojs.options.flash.swf = "js/video-js.swf";
 		</script>
@@ -22,20 +23,30 @@
 		<div class="navbar navbar-inverse myvideohead" style="border-radius: 0px;margin-bottom: 0px;">
 			<div class="myvideotitle">
 				<div class="backoff">
-					<a href="#">
+					<a href="#" class="backoff-a">
 						<</a>
 				</div>
 				<div class="classname">1课程名称 <span class="classname2"> 1.1第一章 乐福托尔斯泰</span></div>
 			</div>
 			<div class="fl-left">
 				<div class="backoff ">
-					<a href="1" class="  glyphicon glyphicon-envelope ">
+					<a href="1"  class="backoff-a  glyphicon glyphicon-envelope ">
 						<span class="badge" style="position: absolute; left: 45px;top: 10px; background-color: red;">42</span>
 					</a>
 
 				</div>
 				<div class="backoff">
-					<a href="#"><img src="img/touxiang.png" width="40px" height="40px" class=" img-circle" /></a>
+					<a href="#" class="backoff-a" onmouseover="displaySubMenu()" onmouseout="hideSubMenu()">
+						<img src="img/touxiang.png" width="40px" height="40px" class=" img-circle" />
+					</a>
+					<div class="  mymenudown " id="downmenu">
+						<div class="myarrow"></div>
+						<div class="downusername">欢迎您：小流氓0123</div>
+						<div class="Setup">
+							<a href="#">个人设置</a>
+							<a href="#" style="float: right;">退出</a>
+						</div>
+					</div>
 				</div>
 
 			</div>
@@ -373,6 +384,25 @@
 							</p>
 						</a>
 					</div>
+
+					<div class="">
+						<a href="#" style="float: none;">
+							<p class="xgkc">
+								<img width="250px" src="img/touxiang.png" />
+								<span class="xgkcnr">这里显示他的内容</span>
+							</p>
+						</a>
+					</div>
+
+					<div class="">
+						<a href="#" style="float: none;">
+							<p class="xgkc">
+								<img width="250px" src="img/touxiang.png" />
+								<span class="xgkcnr">这里显示他的内容</span>
+							</p>
+						</a>
+					</div>
+
 				</div>
 
 			</div>

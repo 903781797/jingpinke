@@ -10,6 +10,7 @@
 		<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="css/video-js.css" />
 		<script type="text/javascript" src="js/video.js"></script>
+		<script src="css/userMenu.js"></script>
 	</head>
 
 	<body data-spy="scroll" data-target="#myScrollspy">
@@ -34,7 +35,7 @@
 						</li>
 						<li>
 							<a href="#">
-								<h4>讨论区</h4></a>
+								<h4>社区</h4></a>
 						</li>
 						<li>
 							<a href="#">
@@ -44,19 +45,42 @@
 					</ul>
 				</div>
 				<div class="col-lg-5 ">
-					<div class="myloginbtn ">
-						<a href="#" class="btn">登录</a>|
-						<a href="#" class="btn ">注册</a>
-					</div>
-					<div class="serchbody ">
+					<div class="myloginbtn " id="loginmenu" >
+						<div id="loginbtn">
+                       	<a href="javascript:loginIn();" class="mybtn">登录</a>|
+						<a href="javascript:loginOut();" class="mybtn ">注册</a>
+                       </div>
+				</div>
+				<div class="serchbody " >
 						<input type="text" id="serch" class=" myserch mytext" placeholder="按课程名搜索" />
 						<input type="button" class=" myserch btntext" value="搜" />
 					</div>
-
-				</div>
 			</div>
 
 		</nav>
+	<!--
+    	<div class="backoff ">
+							<a href="#" class=" backoff-a glyphicon glyphicon-envelope ">
+								<span class="badge" style="position: absolute; left: 45px;top: 10px; background-color: red;">42</span>
+							</a>
+
+						</div>
+						<div class="backoff" onmouseover="displaySubMenu()" onmouseout="hideSubMenu()">
+							<a href="#"  class="dropdown backoff-a" >
+								<img src="img/touxiang.png" width="40px" height="40px" class=" img-circle" />
+							</a>
+
+							<div class="  mymenudown " id="downmenu">
+								<div class="myarrow"></div>
+								<div class="downusername">欢迎您：小流氓0123</div>
+								<div class="Setup"><a href="#" >个人设置</a><a href="#" style="float: right;" >退出</a></div>
+							</div>
+
+						</div>
+
+					</div>
+					
+    -->
 		<!--
               	作者：zhaoqingchun163@163.com
               	时间：2016-08-01
@@ -66,13 +90,19 @@
 			<div class="container">
 				<ul class="list-unstyled mysmallmenubody">
 					<li>
-						<a href="#">首页</a>
+						<a href="#">课程概况</a>
 					</li>
 					<li>
-						<a href="#">讨论</a>
+						<a href="video.html">教学录像</a>
 					</li>
 					<li>
-						<a href="#">问答</a>
+						<a href="#">教学资源</a>
+					</li>
+					<li>
+						<a href="#">模拟试题</a>
+					</li>
+					<li>
+						<a href="#">在线答疑</a>
 					</li>
 
 				</ul>
@@ -92,7 +122,7 @@
 					<video id="my-video" class="video-js vjs-big-play-centered " width="300px" height="200px" controls preload="auto" data-setup="">
 						<!--poster=""-->
 						<source src="video/1.mp4" type='video/mp4' />
-					
+
 					</video>
 				</div>
 				<div class="title-content">
@@ -179,7 +209,7 @@
 				</div>
 			</div>
 		</div>
-	
+
 	</body>
 
 </html>
