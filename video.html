@@ -3,6 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<title></title>
 		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css" type="text/css" />
 		<link rel="stylesheet" href="css/index.css" />
@@ -59,14 +60,17 @@
 		<div class="play-body">
 			<!---->
 			<div class="myvideojs ">
-				<video id="my-video" class="video-js vjs-big-play-centered myvideowidth " controls preload="auto" data-setup="">
+				<video id="my-video" height="450px" class=" video-js vjs-big-play-centered myvideowidth " controls preload="auto" data-setup="">
 					<source src="video/1.mp4" type='video/mp4' />
 				</video>
-				<div class="pull glyphicon glyphicon-list" onclick="pull();"><br><span style="font-size: 12px;padding-top: 10px;display: block;">章节</span></div>
+				
 			</div>
 			<div class="videomenu" id="menu">
 
 				<div class="mymenu-body" id="entitymenu">
+					<div class="pull glyphicon glyphicon-list" onclick="pull();"><br>
+					<span style="">章节</span>
+					</div>
 					<ul class="list-unstyled ">
 						<li class="mymenu-title">1课程名称</li>
 						<li class="mymeny-chapter">1.1第一章 乐福托尔斯泰</li>
@@ -155,10 +159,9 @@
 		<!--play-body end-->
 		<script>
 			videojs("my-video").ready(function() {
-				var play = this;
-				var playwidth = $(".play-body").width();
-				//s	play.width(980);
-				//	play.height(450);
+				$("#entitymenu a").click(function(){
+					pull();
+				});
 			});
 
 			function pull() {
@@ -168,27 +171,13 @@
 				var myvideojs = $(".myvideojs").css('width');
 				var playbody = document.body.clientWidth;
 				if($("#menu").css('width') == '0px') {
-					//$(".myvideojs ").css('width',b);
-
 					$("#menu").animate({
 						width: 360
-					}, "slow");
-
-					$(".myvideojs ").animate({
-						width: playbody - 360
-					}, "slow");
-					//	$("#entitymenu").css("display", "block");
-
+					}, "slow");	
 				} else {
-
-					$(".myvideojs ").animate({
-						width: playbody
-					}, "slow");
 					$("#menu").animate({
 						width: 0
 					}, "slow");
-					//	$("#entitymenu").css("display", "none");
-
 				}
 			}
 		</script>
@@ -315,7 +304,7 @@
 							<p class="comment-time">2016年12月24日</p>
 						</div>
 					</div>
-					<div class="pagebody">
+					<div class="pagebody text-right">
 						<ul class="pagination pagination-sm">
 							<li>
 								<a href="#">&laquo;</a>

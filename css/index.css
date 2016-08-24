@@ -85,7 +85,9 @@ body {
 	border-bottom-left-radius: 5px;
 	border-top-left-radius: 5px;
 }
-
+.menuShadow{
+	box-shadow: 0px 2px 5px #888888;
+}
 .mybtn {
 	padding: 6px 12px;
 	color: #FFFFFF;
@@ -132,7 +134,6 @@ body {
 .menu2 {
 	width: 100%;
 	background-color: #F8F8F8;
-	height: 50px;
 	border-bottom: solid 1px #eee;
 }
 
@@ -265,11 +266,13 @@ body {
 }
 
 .active {
-	background-image: url(../img/jiantou.png);
-	background-repeat: no-repeat;
-	background-position: left center;
+				background-image: url(../img/jiantou.png);
+				background-repeat: no-repeat;
+				background-position: left center;
+			}
+.widthFull{
+	width: 100%;
 }
-
 .myvideohead {
 	background-color: #14191E;
 	font-size: 16px;
@@ -277,7 +280,15 @@ body {
 	line-height: 60px;
 	width: 100%;
 }
-
+.floatright{
+	float:right;
+}
+.floatleft{
+	float:left;
+}
+.borderbottom{
+	border-bottom: 1px solid rgb(221, 221, 221);
+}
 .backoff-a {
 	width: 70px;
 	height: 60px;
@@ -322,7 +333,7 @@ body {
 
 .myvideojs {
 	width: 100%;
-	float: left;
+	position: relative;
 }
 
 .myvideowidth {
@@ -340,24 +351,28 @@ body {
 .videomenu {
 	width: 0;
 	height: 450px;
-	float: right;
+	position: absolute;
 	background-color: #14191E;
+	top: 62px;
+	right: 0px;
+	z-index: 1000;
 }
 
 .pull {
-	float: right;
 	width: 50px;
 	height: 60px;
-	position: relative;
-	top: 50%;
-	margin-top: -302px;
+	position: absolute;
+	top: 40%;
+	left: -50px;
 	background-color: #363C40;
 	text-align: center;
 	padding-top: 10px;
 	color: #B5B9BC;
 	cursor: pointer;
 }
-
+.pull span{
+	font-size: 12px;padding-top: 10px;display: block;
+}
 .pull:hover {
 	background-color: red;
 	color: #FFFFFF;
@@ -536,11 +551,11 @@ body {
 }
 
 .mymenudown {
-	z-index: 100;
+	z-index: 11111;
 	width: 200px;
 	display: none;
 	position: absolute;
-	left: -85%;
+	left: -80%;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 	background-color: white;
 	color: #080808;
