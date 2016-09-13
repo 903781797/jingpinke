@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 	<head>
@@ -23,20 +23,20 @@
 		<!--head-->
 		<div class="navbar navbar-inverse myvideohead" style="border-radius: 0px;margin-bottom: 0px;">
 			<div class="myvideotitle">
-				<div class="backoff">
+				<div class="floatleft">
 					<a href="#" class="backoff-a">
 						<</a>
 				</div>
 				<div class="classname">1课程名称 <span class="classname2"> 1.1第一章 乐福托尔斯泰</span></div>
 			</div>
 			<div class="fl-left">
-				<div class="backoff ">
+				<div class="floatleft ">
 					<a href="1"  class="backoff-a  glyphicon glyphicon-envelope ">
 						<span class="badge" style="position: absolute; left: 45px;top: 10px; background-color: red;">42</span>
 					</a>
 
 				</div>
-				<div class="backoff"  onmouseover="displaySubMenu()" onmouseout="hideSubMenu()">
+				<div class="backoff2"  onmouseover="displaySubMenu()" onmouseout="hideSubMenu()">
 					<a href="#" class="backoff-a">
 						<img src="img/touxiang.png" width="40px" height="40px" class=" img-circle" />
 					</a>
@@ -66,11 +66,11 @@
 				
 			</div>
 			<div class="videomenu" id="menu">
-
-				<div class="mymenu-body" id="entitymenu">
-					<div class="pull glyphicon glyphicon-list" onclick="pull();"><br>
+<div class="pull glyphicon glyphicon-list" onclick="pull();"><br>
 					<span style="">章节</span>
 					</div>
+				<div class="mymenu-body" id="entitymenu">
+					
 					<ul class="list-unstyled ">
 						<li class="mymenu-title">1课程名称</li>
 						<li class="mymeny-chapter">1.1第一章 乐福托尔斯泰</li>
@@ -162,6 +162,7 @@
 				$("#entitymenu a").click(function(){
 					pull();
 				});
+$('#my-video').bind('contextmenu',function() { return false; }); 
 			});
 
 			function pull() {
@@ -413,6 +414,7 @@
 				$("#textNum").html(textnum + "/300")
 
 			}
+			
 		</script>
 
 	</body>

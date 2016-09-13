@@ -66,35 +66,37 @@ body {
 }
 
 .serchbody {
-	margin-right: 10px;
+	padding-left: 25px;
 	color: #3C3C3C;
-	float: right;
+	width: 250px;
 }
 
 .myserch {
 	float: left;
-	margin-top: 33px;
+	margin: 30px 0px;
 }
 
 .mytext {
 	padding-left: 5px;
-	width: 200px;
+	width: 190px;
 	height: 30px;
 	border: none;
 	background-color: #F5F5F5;
 	border-bottom-left-radius: 5px;
 	border-top-left-radius: 5px;
 }
-.menuShadow{
+
+.menuShadow {
 	box-shadow: 0px 2px 5px #888888;
 }
+
 .mybtn {
-	padding: 6px 12px;
+	padding: 6px 20px;
 	color: #FFFFFF;
 }
 
 .btntext {
-	width: 30px;
+	width: 35px;
 	height: 30px;
 	border: none;
 	border-bottom-right-radius: 5px;
@@ -102,9 +104,12 @@ body {
 }
 
 .myloginbtn {
-	line-height: 62px;
-	float: right;
-	padding-top: 18px
+	width: 160px;
+	line-height: 90px;
+}
+
+#loginbtn {
+	float: left;
 }
 
 .myloginbtn a:hover {
@@ -138,7 +143,8 @@ body {
 }
 
 .title_img {
-	padding: 10px 35px 10px 0px;
+	padding: 10px 0px 10px 0px;
+	width: 300px;
 	float: left;
 }
 
@@ -152,17 +158,16 @@ body {
 }
 
 .title-content {
-	padding: 10px 10px 10px 0px;
-	float: left;
-	height: 200px;
-	width: 70%;
+	padding: 10px;
+	float: right;
+	min-width: 70%;
 }
 
 .titlebox {
 	width: 100%;
-	float: left;
 	padding-left: 10px;
 	padding-right: 10px;
+	overflow: hidden;
 }
 
 .myintroduction {
@@ -216,9 +221,14 @@ body {
 }
 
 .addclass {
-	width: 285px;
-	float: right;
 	top: 59px;
+width: 276px;
+}
+
+.addbody {
+	margin-right:15px;
+width: 276px;
+	float: right;
 }
 
 .texttitle2 {
@@ -243,7 +253,7 @@ body {
 
 .arrow {
 	border-right: solid 1px #DDDDDD;
-	width: 30px;
+	width: 28px;
 	height: 166px;
 	float: left;
 }
@@ -266,13 +276,15 @@ body {
 }
 
 .active {
-				background-image: url(../img/jiantou.png);
-				background-repeat: no-repeat;
-				background-position: left center;
-			}
-.widthFull{
+	background-image: url(../img/jiantou.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.widthFull {
 	width: 100%;
 }
+
 .myvideohead {
 	background-color: #14191E;
 	font-size: 16px;
@@ -280,15 +292,19 @@ body {
 	line-height: 60px;
 	width: 100%;
 }
-.floatright{
-	float:right;
+
+.floatright {
+	float: right;
 }
-.floatleft{
-	float:left;
+
+.floatleft {
+	float: left;
 }
-.borderbottom{
+
+.borderbottom {
 	border-bottom: 1px solid rgb(221, 221, 221);
 }
+
 .backoff-a {
 	width: 70px;
 	height: 60px;
@@ -301,6 +317,12 @@ body {
 
 .backoff {
 	width: 70px;
+	float: left;
+	position: relative;
+	margin: 15px 0px;
+}
+
+.backoff2 {
 	float: left;
 	position: relative;
 }
@@ -370,9 +392,13 @@ body {
 	color: #B5B9BC;
 	cursor: pointer;
 }
-.pull span{
-	font-size: 12px;padding-top: 10px;display: block;
+
+.pull span {
+	font-size: 12px;
+	padding-top: 10px;
+	display: block;
 }
+
 .pull:hover {
 	background-color: red;
 	color: #FFFFFF;
@@ -587,7 +613,6 @@ body {
 	display: inline-block;
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
-	
 	position: absolute;
 	top: -5px;
 	left: 90px;
@@ -602,4 +627,64 @@ body {
 	position: absolute;
 	top: -5px;
 	left: 90px;
+}
+.spinner {
+  margin: 100px auto 0;
+  width: 150px;
+  text-align: center;
+}
+ 
+.spinner > div {
+  width: 30px;
+  height: 30px;
+  background-color: #67CF22;
+ 
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+ 
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+ 
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+ 
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+ 
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+.bgfooter{
+	margin-top: 20px;
+	background-color: #222222;
+}
+.friend{
+	margin: 10px;
+	color:#CCCCCC;
+}
+.friend a{
+	color: #ddd;
+}
+.host{
+	margin: 10px;
+	color:#CCCCCC;
 }

@@ -123,6 +123,7 @@ margin: 10px 0px;
 .uc-infobtn a:hover {
 	text-decoration: none;
 	background-color: #F2F8FF;
+	color: #23527C;
 }
 
 .info-title {
@@ -161,4 +162,36 @@ margin: 10px 0px;
 	text-align: right;
 	margin-top: 10px;
 }
-
+.uc-readed,.uc-readed:focus{
+	background-color: #337AB7;
+	color: #ffffff;
+	text-decoration: none;
+}
+.uc-classIco{
+font-size: 18px;
+margin-right: 3px;
+}
+.uc-className{
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+.uc-classMapping{
+	padding: 10px 0px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.uc-class  p span{
+	color: #b3b3b3;
+}
+.uc-class  p  a{
+	color: #222222;
+	
+	padding-right: 5px;
+}
+.uc-teacher li{
+	float: left;
+}
+.uc-type{
+	font-size: 12px;
+	padding-top: 3px;
+}
